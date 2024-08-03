@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ExamPortal" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+<!--         <item name="colorPrimary">@color/light_blue</item>-->
+<!--        <item name="colorPrimaryDark">@color/blue</item>-->
+    </style>
+
+<!--    <style name="Theme.Exam" parent="Theme.AppCompat.DayNight" >-->
+<!--        <item name="colorPrimary">@color/light_blue</item>-->
+<!--        -->
+<!--        <item name="colorPrimaryDark">@color/light_blue</item>-->
+<!--        -->
+
+<!--    </style>-->
+
+<!--    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">-->
+<!--        &lt;!&ndash; Customize your theme here &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/blue</item>-->
+<!--        <item name="colorPrimaryDark">@color/blue</item>-->
+<!--        <item name="android:statusBarColor">@color/blue</item>-->
+<!--        <item name="colorAccent">@color/blue</item>-->
+
+<!--        &lt;!&ndash; Other customizations &ndash;&gt;-->
+<!--&lt;!&ndash;        <item name="android:windowBackground">@color/white</item>&ndash;&gt;-->
+<!--    </style>-->
+
+    <style name="RobotoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/montserrat_subrayada</item>
+    </style>
+
+
+    <style name="Theme.ExamPortal" parent="Base.Theme.ExamPortal" >
+        <item name="colorPrimary">@color/blue</item>
+
+    </style>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_white"
+    tools:context=".fragment.AddCategoryFragment">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat_subrayada_bold"
+        android:text="Add Category"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/addTitle"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edit_text_blue"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="start"
+        android:hint="Title"
+        android:inputType="textMultiLine"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/addDecription"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edit_text_blue"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="start"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/addTitle"
+        app:layout_constraintStart_toStartOf="@+id/addTitle"
+        app:layout_constraintTop_toBottomOf="@+id/addTitle" />
+
+    <Button
+        android:id="@+id/addCategoryBtn"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Add Category"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/addDecription"
+        app:layout_constraintStart_toStartOf="@+id/addDecription"
+        app:layout_constraintTop_toBottomOf="@+id/addDecription" />
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/custom_loader_animation"
+
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/updateCategoryBtn"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Update Category"
+        android:textSize="16sp"
+
+        android:visibility="gone"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/addDecription"
+        app:layout_constraintStart_toStartOf="@+id/addDecription"
+        app:layout_constraintTop_toBottomOf="@+id/addDecription" />
+</androidx.constraintlayout.widget.ConstraintLayout>

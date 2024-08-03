@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_white"
+    tools:context=".fragment.AddQuizFragment">
+
+
+    <TextView
+        android:id="@+id/textView5"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat_subrayada_bold"
+        android:text="Add Question"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/qContent"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edit_text_red"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="start"
+        android:hint="Enter Detail Question ?"
+        android:inputType="textMultiLine"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/option1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_red"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="start"
+        android:hint="Enter Option 1*"
+        android:inputType="text"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/qContent"
+        app:layout_constraintStart_toStartOf="@+id/qContent"
+        app:layout_constraintTop_toBottomOf="@+id/qContent" />
+
+    <EditText
+        android:id="@+id/option2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_red"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="start"
+        android:hint="Enter Option 2*"
+        android:inputType="text"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/option1"
+        app:layout_constraintStart_toStartOf="@+id/option1"
+        app:layout_constraintTop_toBottomOf="@+id/option1" />
+
+    <EditText
+        android:id="@+id/option3"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_red"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="start"
+        android:hint="Enter Option 3*"
+        android:inputType="text"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/option2"
+        app:layout_constraintStart_toStartOf="@+id/option2"
+        app:layout_constraintTop_toBottomOf="@+id/option2" />
+
+    <EditText
+        android:id="@+id/option4"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_red"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="start"
+        android:hint="Enter Option 4*"
+        android:inputType="text"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/option3"
+        app:layout_constraintStart_toStartOf="@+id/option3"
+        app:layout_constraintTop_toBottomOf="@+id/option3" />
+
+    <EditText
+        android:id="@+id/answer"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_blue"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="start"
+        android:hint="Enter Correct Answer.*"
+        android:inputType="text"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/option4"
+        app:layout_constraintStart_toStartOf="@+id/option4"
+        app:layout_constraintTop_toBottomOf="@+id/option4" />
+
+    <Button
+        android:id="@+id/addQuiestiontn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Add Question"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check" />
+
+    <Switch
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:textOff="OFF"
+        android:textOn="ON"
+
+        android:thumb="@drawable/custom_switch"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/answer"
+        app:layout_constraintTop_toBottomOf="@+id/answer"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/publish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Publish"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/check"
+        app:layout_constraintStart_toEndOf="@+id/check"
+        app:layout_constraintTop_toTopOf="@+id/check" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat_subrayada_bold"
+        android:text="Add Quiz"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/quizTitle"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edit_text_blue"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="start"
+        android:hint="Quiz Title"
+        android:inputType="text"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/quizDescription"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_blue"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="start"
+        android:hint="Quiz Description"
+        android:inputType="textMultiLine"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/quizTitle"
+        app:layout_constraintStart_toStartOf="@+id/quizTitle"
+        app:layout_constraintTop_toBottomOf="@+id/quizTitle" />
+
+    <EditText
+        android:id="@+id/quizMaxMarks"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_blue"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="start"
+        android:hint="maxMarks"
+        android:inputType="text"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/quizDescription"
+        app:layout_constraintStart_toStartOf="@+id/quizDescription"
+        app:layout_constraintTop_toBottomOf="@+id/quizDescription" />
+
+    <EditText
+        android:id="@+id/quizNumberOfQuestion"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_blue"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="start"
+        android:hint="No OF Question"
+        android:inputType="text"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/quizMaxMarks"
+        app:layout_constraintStart_toStartOf="@+id/quizMaxMarks"
+        app:layout_constraintTop_toBottomOf="@+id/quizMaxMarks" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_blue"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/quizNumberOfQuestion"
+        app:layout_constraintStart_toStartOf="@+id/quizNumberOfQuestion"
+        app:layout_constraintTop_toBottomOf="@+id/quizNumberOfQuestion" />
+
+    <Switch
+        android:id="@+id/QuizActive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:textOff="OFF"
+        android:textOn="ON"
+        android:thumb="@drawable/custom_switch"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/montserrat_semibold"
+
+        android:text="Publish"
+        android:textSize="16sp"
+        android:visibility="gone"
+
+        app:layout_constraintBottom_toBottomOf="@+id/QuizActive"
+        app:layout_constraintStart_toEndOf="@+id/QuizActive"
+        app:layout_constraintTop_toTopOf="@+id/QuizActive" />
+
+    <Button
+        android:id="@+id/addQuizBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Add Quiz"
+        android:textSize="16sp"
+
+        android:visibility="gone"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/QuizActive" />
+
+    <ProgressBar
+        android:id="@+id/progressBar4"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/custom_loader_animation"
+
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
